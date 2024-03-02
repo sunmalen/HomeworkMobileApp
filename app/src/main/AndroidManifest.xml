@@ -17,13 +17,6 @@
             android:exported="false" >
         </activity>
         <activity
-            android:name=".lessions.IntentActivity"
-            android:exported="false" >
-        </activity>
-        <activity
-            android:name=".homework.homework2.designLayout.HomeworkDesignLayout"
-            android:exported="false" />
-        <activity
             android:name=".homework.homework1.currencyCovertor.KhCovertEn"
             android:exported="false" />
         <activity
