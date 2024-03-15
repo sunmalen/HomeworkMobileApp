@@ -16,10 +16,7 @@
             android:name=".lessions.LifecycleActivity"
             android:exported="false" >
         </activity>
-        <activity
-            android:name=".lessions.IntentActivity"
-            android:exported="false" >
-        </activity>
+
         <activity
             android:name=".homework.homework2.designLayout.HomeworkDesignLayout"
             android:exported="false" />
