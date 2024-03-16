@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -27,6 +28,7 @@ public class EnConvertKh extends AppCompatActivity {
         editTextEN = findViewById(R.id.edt_text);
         buttonConvert = findViewById(R.id.btn_eu_kh);
         textViewKHR = findViewById(R.id.txt_result);
+        editTextEN.setImeOptions(EditorInfo.IME_ACTION_DONE);
 
         buttonConvert.setOnClickListener(new View.OnClickListener() {
             @Override

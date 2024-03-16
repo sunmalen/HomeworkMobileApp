@@ -5,6 +5,7 @@ package com.malen.aeumastermobile.homework.homework1.currencyCovertor;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -27,6 +28,7 @@ public class KhConverUsd extends AppCompatActivity {
         editTextKHR = findViewById(R.id.edt_text);
         buttonConvert = findViewById(R.id.btn_kh_usd);
         textViewUSD = findViewById(R.id.txt_result);
+        editTextKHR.setImeOptions(EditorInfo.IME_ACTION_DONE);
 
         // print amountKHR + " KHR = " + amountUSD + " USD"
         // You can retrieve the input value from the EditText
