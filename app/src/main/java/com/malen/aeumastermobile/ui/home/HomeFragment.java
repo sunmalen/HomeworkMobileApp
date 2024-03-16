@@ -6,18 +6,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
-
 import com.malen.aeumastermobile.R;
 import com.malen.aeumastermobile.databinding.FragmentHomeBinding;
 import com.malen.aeumastermobile.homework.homework1.currencyCovertor.EnConvertKh;
 import com.malen.aeumastermobile.homework.homework1.currencyCovertor.KhConverUsd;
 import com.malen.aeumastermobile.homework.homework1.currencyCovertor.KhCovertEn;
 import com.malen.aeumastermobile.homework.homework1.currencyCovertor.UsdConverKh;
-import com.malen.aeumastermobile.lessions.SecondActivity;
 
 public class HomeFragment extends Fragment {
 
@@ -25,8 +21,6 @@ public class HomeFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        HomeViewModel homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 

@@ -2,6 +2,7 @@ package com.malen.aeumastermobile.homework.homework1.currencyCovertor;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
@@ -39,6 +40,7 @@ public class KhCovertEn extends AppCompatActivity {
 
     }
 
+    @SuppressLint("DefaultLocale")
     private void convertCurrency() {
         String khrText = editTextKHR.getText().toString();
 

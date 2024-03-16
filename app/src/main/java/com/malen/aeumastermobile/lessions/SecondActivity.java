@@ -1,12 +1,12 @@
 package com.malen.aeumastermobile.lessions;
-
-import static com.malen.aeumastermobile.R.id.txt_get_intent_two;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import com.malen.aeumastermobile.R;
+
+import java.util.Objects;
+
 public class SecondActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,7 +14,7 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
 
 
-        getSupportActionBar().setTitle("Second Screen");
+        Objects.requireNonNull(getSupportActionBar()).setTitle("Second Screen");
         TextView text = findViewById(R.id.txt_get_intent);
         //get the  Intent that started this activity
         Intent intent = getIntent();
