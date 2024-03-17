@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+
+import com.malen.aeumastermobile.ListViewActivity;
 import com.malen.aeumastermobile.R;
 import com.malen.aeumastermobile.databinding.FragmentGalleryBinding;
 import com.malen.aeumastermobile.homework.homework1.currencyCovertor.KhConverUsd;
@@ -27,7 +29,7 @@ public class GalleryFragment extends Fragment {
         btn_area.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), KhConverUsd.class);
+                Intent intent = new Intent(getActivity(), ListViewActivity.class);
                 startActivity(intent);
             }
         });
